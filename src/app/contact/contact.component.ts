@@ -1,23 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 //import { PortfolioService } from '../portfolio.service';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient } from "@angular/common/http";
 import {
   FormBuilder,
   FormControl,
   FormGroup,
   Validators,
-} from '@angular/forms';
+} from "@angular/forms";
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css'],
+  selector: "app-contact",
+  templateUrl: "./contact.component.html",
+  styleUrls: ["./contact.component.css"],
 })
 export class ContactComponent implements OnInit {
+  // '6LeRQvkcAAAAANQ9kIKBhXsJsJ5cCDw7TKX6Q_39';
   siteKey: any;
   constructor(private http: HttpClient, private formBuilder: FormBuilder) {
-    this.siteKey = '6LeRQvkcAAAAANQ9kIKBhXsJsJ5cCDw7TKX6Q_39';
+    this.siteKey = "6Ld8fiMdAAAAAPVsYC5k_f4hhBItX_Vzt7QRnA95";
   }
-
   ngOnInit(): void {}
 
   newContact(postData: {
@@ -28,7 +28,7 @@ export class ContactComponent implements OnInit {
   }) {
     this.http
       .post(
-        ' https://myportfolio-35e7b-default-rtdb.firebaseio.com/contact.json',
+        " https://myportfolio-35e7b-default-rtdb.firebaseio.com/contact.json",
         postData
       )
       .subscribe((responseData) => {
