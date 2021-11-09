@@ -1,0 +1,84 @@
+<section>
+  <div class="contianer">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="p-profile"></div>
+      </div>
+      <div class="col-sm-7">
+        <h2>My Contact Details</h2>
+        <div>
+          <b>Sushma.H</b><br />
+          Bangalore,India.
+        </div>
+        <hr />
+        <h2>Lets Connect</h2>
+        <form #postForm="ngForm" (ngSubmit)="newContact(postForm.value)">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <span class="required"> *</span>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              required
+              ngModel
+              name="email"
+              aria-describedby="email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <span class="required"> *</span>
+
+            <input
+              type="name"
+              class="form-control"
+              id="name"
+              required
+              ngModel
+              name="name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <span class="required"> *</span>
+
+            <textarea
+              type="message"
+              class="form-control"
+              id="message"
+              ngModel
+              name="message"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <div class="captcha">
+              <ngx-recaptcha2
+                #captchaElem
+                [siteKey]="siteKey"
+                ngModel
+                name="recaptcha"
+                required
+              ></ngx-recaptcha2>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button
+              [disabled]="!postForm.valid"
+              type="submit"
+              class="btn btn-primary"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- <div [hidden]="!postForm.valid">
+    <h4>You have submitted successfully.!</h4>
+  </div> -->
+</section>

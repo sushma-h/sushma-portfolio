@@ -1,0 +1,53 @@
+h2 {
+  /* font-size: 30px; */
+  margin-left: 20px;
+  border-bottom: 4px solid;
+}
+p {
+  text-align: justify;
+  /* font-family: "Times New Roman", Times, serif;
+  font-size: medium; */
+}
+.p-profile {
+  background: url(/assets/img/myphoto.jpg);
+  width: 90%;
+  height: 400px;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+#paragraph {
+  margin: 0;
+  padding: 25px;
+}
+@media (max-width: 768px) {
+  .p-profile {
+    background: url(/assets/img/myphoto.jpg);
+    width: 400px;
+    height: 200px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .col-sm-7 {
+    height: 10vh;
+    width: 100%;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  /* span {
+    font-size: 70px;
+  } */
+  .container .container {
+    width: 100%;
+    padding: 0 1em;
+  }
+  h2 {
+    margin-left: 20px;
+  }
+}
