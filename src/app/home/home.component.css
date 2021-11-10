@@ -1,13 +1,20 @@
-.p-profile {
-  background: url("/assets/img/myphoto.jpg");
+/* .p-profile {
+  background: url("assets/img/myphoto.jpg");
   width: 90%;
   height: 400px;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-}
+} */
 h2 {
   padding-left: 150px;
+}
+.my-photo {
+  width: 90%;
+  height: 400px;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 span {
   margin-left: 250px;
