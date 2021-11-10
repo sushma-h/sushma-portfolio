@@ -57,14 +57,14 @@
             <div class="captcha">
               <ngx-recaptcha2
                 #captchaElem
-                secretKey="secretKey"
+                siteKey="siteKey"
                 ngModel
                 name="recaptcha"
                 required
               ></ngx-recaptcha2>
             </div>
           </div>
-          <!-- siteKey="6Ld8fiMdAAAAAPVsYC5k_f4hhBItX_Vzt7QRnA95" -->
+
           <div class="form-group">
             <button
               [disabled]="!postForm.valid"
