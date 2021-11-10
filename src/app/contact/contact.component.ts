@@ -14,9 +14,11 @@ import {
 })
 export class ContactComponent implements OnInit {
   // '6LeRQvkcAAAAANQ9kIKBhXsJsJ5cCDw7TKX6Q_39';
-  siteKey: any;
+  //siteKey: any;
+  secretKey: any;
   constructor(private http: HttpClient, private formBuilder: FormBuilder) {
-    this.siteKey = "6Ld8fiMdAAAAAPVsYC5k_f4hhBItX_Vzt7QRnA95";
+    //this.siteKey = "6Ld8fiMdAAAAAPVsYC5k_f4hhBItX_Vzt7QRnA95";
+    this.secretKey = "6LeRQvkcAAAAAEldjvJ4whkyywL8Q3piKWqMiSy-";
   }
   ngOnInit(): void {}
 
