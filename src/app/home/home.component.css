@@ -1,5 +1,5 @@
 .p-profile {
-  background: url("assets/img/myphoto.jpg");
+  background: url("/assets/img/myphoto.jpg");
   width: 90%;
   height: 400px;
   background-size: cover;

@@ -1,6 +1,7 @@
 {
   "name": "portfolio-project",
   "version": "0.0.0",
+  "homepage": "https://sushma-h.github.io/sushma-portfolio",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
